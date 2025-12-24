@@ -1,65 +1,98 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import Navbar from '@/components/navbar'
+
+// Images
+import img1 from '@/assets/hero-image.jpg'
+import img2 from '@/assets/hero-2.jpg'
+import img3 from '@/assets/hero-3.jpg'
+
+const images = [img1, img2, img3]
+
+const Hero = () => {
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length)
+    }, 6000)
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Navbar />
+
+      <section className="min-h-screen pt-32 px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto items-center">
+          <div className="space-y-6">
+            <h1 className="text-5xl font-bold text-black leading-tight">
+              Build Your Architecture Career <br />
+              With Real Projects
+            </h1>
+
+            <p className="text-lg text-gray-600 max-w-xl">
+              Archedin connects architectural students with real-world projects
+              that strengthen portfolios and build experience.
+            </p>
+
+            <div className="flex gap-4">
+              <button className="px-6 py-3 bg-purple-800 text-white rounded-xl hover:bg-purple-950 transition">
+                Get Started
+              </button>
+              <button className="px-6 py-3 border border-black rounded-xl hover:bg-purple-950 hover:text-white transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div className="flex justify-center md:justify-end">
+            <div className="relative w-[420px] h-[420px]">
+              {images.map((img, index) => {
+                const position =
+                  (index - current + images.length) % images.length
+
+                return (
+                  <div
+                    key={index}
+                    className={`
+                      absolute inset-0
+                      transition-all duration-700 ease-in-out
+                      ${
+                        position === 0
+                          ? 'z-30 scale-100 opacity-100'
+                          : ''
+                      }
+                      ${
+                        position === 1
+                          ? 'z-20 scale-95 translate-x-6 translate-y-6 opacity-80'
+                          : ''
+                      }
+                      ${
+                        position === 2
+                          ? 'z-10 scale-90 translate-x-12 translate-y-12 opacity-60'
+                          : ''
+                      }
+                    `}
+                  >
+                    <Image
+                      src={img}
+                      alt="Hero slide"
+                      fill
+                      className="rounded-3xl shadow-xl cursor-pointer transition-transform duration-700 hover:rotate-[360deg]"
+                    />
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+      </section>
+    </>
+  )
 }
+
+export default Hero

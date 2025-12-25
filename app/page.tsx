@@ -12,7 +12,7 @@ const Hero = () => {
 return (
     <>
       {/* Hero Section  */}
-      <section className="min-h-screen flex items-center px-4 md:px-8">
+      <section className="min-h-screen flex items-center px-4 md:px-8 pt-20 md:pt-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-7xl mx-auto items-center w-full">
           <div className="space-y-4 md:space-y-6 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight">

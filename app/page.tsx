@@ -283,6 +283,186 @@ return (
     </div>
   </div>
 </section>
+
+{/* For Students vs For Firms Section */}
+<section className="py-12 md:py-20 px-4 md:px-8 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-12 md:mb-16">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4">
+        Built For Everyone
+      </h2>
+      <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+        Whether you're a student looking to gain experience or a firm seeking fresh talent, 
+        Archedin bridges the gap
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+      {/* FOR STUDENTS CARD */}
+      <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 to-gray-700 p-8 md:p-10 text-white hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 -left-4 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-blob"></div>
+          <div className="absolute top-0 -right-4 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div className="relative z-10">
+          {/* Icon */}
+          <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/30 transition-all duration-300 group-hover:rotate-6">
+            <svg className="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">For Students</h3>
+          <p className="text-gray-300 mb-8 text-sm md:text-base">
+            Launch your architecture career with real-world projects and hands-on experience
+          </p>
+
+          {/* Benefits List */}
+          <ul className="space-y-4 mb-8">
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Work on diverse real-world architecture projects</span>
+            </li>
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-75">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Build an impressive portfolio that stands out</span>
+            </li>
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-150">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Get Jobs from Leading Architecture Firms</span>
+            </li>
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-225">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Connect with industry professionals</span>
+            </li>
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-300">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Earn with paid project opportunities</span>
+            </li>
+          </ul>
+
+          <button className="w-full bg-white text-gray-900 font-semibold py-3 px-6 rounded-xl hover:bg-gray-50 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base">
+            Start as a Student →
+          </button>
+        </div>
+      </div>
+
+      {/* FOR FIRMS CARD */}
+      <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 to-gray-700 p-8 md:p-10 text-white hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 -left-4 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-blob"></div>
+          <div className="absolute top-0 -right-4 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div className="relative z-10">
+          {/* Icon */}
+          <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/30 transition-all duration-300 group-hover:rotate-6">
+            <svg className="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">For Firms</h3>
+          <p className="text-gray-300 mb-8 text-sm md:text-base">
+            Access a pool of talented architecture students eager to contribute to your projects
+          </p>
+
+          {/* Benefits List */}
+          <ul className="space-y-4 mb-8">
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Access talented architecture students</span>
+            </li>
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-75">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Scale your team flexibly for project demands</span>
+            </li>
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-150">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Find and recruit your next full-time hire</span>
+            </li>
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-225">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Fresh perspectives and innovative ideas</span>
+            </li>
+            <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-300">
+              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-sm md:text-base">Smart hiring for busy seasons and projects</span>
+            </li>
+          </ul>
+
+          {/* CTA Button */}
+          <button className="w-full bg-white text-gray-900 font-semibold py-3 px-6 rounded-xl hover:bg-gray-50 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base">
+            Register Your Firm →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="relative w-full flex items-center justify-center py-24 px-4">
+ <div className="relative bg-purple-950/90 rounded-3xl w-[95%] px-8 md:px-24 py-20 text-center shadow-2xl">
+
+     {/* Content */}
+    <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+      Design Your Future.  
+      <span className="block text-purple-300">
+        Build a Career That Stands Out.
+      </span>
+    </h2>
+    <p className="mt-6 text-base md:text-lg text-purple-200 max-w-2xl mx-auto">
+      Gain real-world experience through live architectural projects, grow a powerful portfolio, and connect with firms actively hiring.
+    </p>
+
+    <button className="mt-10 px-10 py-4 bg-white text-purple-900 font-semibold rounded-xl hover:bg-purple-200 transition-all duration-300">
+      Get Started Today
+    </button>
+  </div>
+</section>
     </>
   )
 }

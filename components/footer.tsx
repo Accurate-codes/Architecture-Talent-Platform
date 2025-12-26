@@ -91,7 +91,7 @@ const footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-400">
-            © 2025 Archedin. All rights reserved.
+            © 2026 Archedin. All rights reserved.
           </p>
           <div className="flex flex-wrap gap-6 text-sm">
             <Link href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Privacy Policy</Link>

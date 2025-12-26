@@ -29,10 +29,10 @@ return (
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <button className="px-6 py-3 bg-purple-800 text-white rounded-xl hover:bg-purple-950 transition text-sm md:text-base">
-                Get Started
+                Join as a Student
               </button>
               <button className="px-6 py-3 border border-black rounded-xl hover:bg-purple-950 hover:text-white transition text-sm md:text-base">
-                Learn More
+                Hire Talent
               </button>
             </div>
           </div>
@@ -316,7 +316,7 @@ return (
 
           <h3 className="text-2xl md:text-3xl font-bold mb-4">For Students</h3>
           <p className="text-gray-300 mb-8 text-sm md:text-base">
-            Launch your architecture career with real-world projects and hands-on experience
+            Build More Than Grades. Build Proof.
           </p>
 
           {/* Benefits List */}
@@ -327,7 +327,7 @@ return (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span className="text-sm md:text-base">Work on diverse real-world architecture projects</span>
+              <span className="text-sm md:text-base">Build a professional portfolio</span>
             </li>
             <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-75">
               <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -335,7 +335,7 @@ return (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span className="text-sm md:text-base">Build an impressive portfolio that stands out</span>
+              <span className="text-sm md:text-base">Gain real-world experience</span>
             </li>
             <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-150">
               <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -343,7 +343,7 @@ return (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span className="text-sm md:text-base">Get Jobs from Leading Architecture Firms</span>
+              <span className="text-sm md:text-base">Get discovered by firms</span>
             </li>
             <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-225">
               <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -351,7 +351,7 @@ return (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span className="text-sm md:text-base">Connect with industry professionals</span>
+              <span className="text-sm md:text-base">Stand out beyond CVs</span>
             </li>
             <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-300">
               <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -364,7 +364,7 @@ return (
           </ul>
 
           <button className="w-full bg-white text-gray-900 font-semibold py-3 px-6 rounded-xl hover:bg-gray-50 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base">
-            Start as a Student →
+            Create Your Student Profile →
           </button>
         </div>
       </div>
@@ -387,7 +387,7 @@ return (
 
           <h3 className="text-2xl md:text-3xl font-bold mb-4">For Firms</h3>
           <p className="text-gray-300 mb-8 text-sm md:text-base">
-            Access a pool of talented architecture students eager to contribute to your projects
+            Hire With Confidence
           </p>
 
           {/* Benefits List */}
@@ -406,7 +406,7 @@ return (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span className="text-sm md:text-base">Scale your team flexibly for project demands</span>
+              <span className="text-sm md:text-base">Discover job-ready talent</span>
             </li>
             <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-150">
               <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -414,7 +414,7 @@ return (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span className="text-sm md:text-base">Find and recruit your next full-time hire</span>
+              <span className="text-sm md:text-base">Reduce hiring risk</span>
             </li>
             <li className="flex items-start gap-3 group-hover:translate-x-2 transition-transform duration-300 delay-225">
               <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -436,7 +436,7 @@ return (
 
           {/* CTA Button */}
           <button className="w-full bg-white text-gray-900 font-semibold py-3 px-6 rounded-xl hover:bg-gray-50 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 text-sm md:text-base">
-            Register Your Firm →
+            Find Talent →
           </button>
         </div>
       </div>
@@ -451,16 +451,20 @@ return (
     <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
       Design Your Future.  
       <span className="block text-purple-300">
-        Build a Career That Stands Out.
+        Start Building. Start Hiring.
       </span>
     </h2>
     <p className="mt-6 text-base md:text-lg text-purple-200 max-w-2xl mx-auto">
       Gain real-world experience through live architectural projects, grow a powerful portfolio, and connect with firms actively hiring.
     </p>
-
-    <button className="mt-10 px-10 py-4 bg-white text-purple-900 font-semibold rounded-xl hover:bg-purple-200 transition-all duration-300">
-      Get Started Today
+     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-center">
+      <button className="mt-10 px-10 py-4 bg-white text-purple-900 font-semibold rounded-xl hover:bg-purple-200 transition-all duration-300">
+      Join as a Student
     </button>
+    <button className="mt-10 px-10 py-4 bg-white text-purple-900 font-semibold rounded-xl hover:bg-purple-200 transition-all duration-300">
+      Hire Talent
+    </button>
+    </div>
   </div>
 </section>
     </>

@@ -27,11 +27,11 @@ const Page = () => {
   return (
     <main className="bg-neutral-100">
       <nav className="flex items-center justify-between px-4 md:px-8 py-4 bg-white shadow-md absolute top-4 left-1/2 -translate-x-1/2 w-[95%] md:w-[90%] max-w-6xl rounded-3xl shadow-lg z-50">
-        <h1 className="text-2xl md:text-3xl font-bold text-black">Archedin</h1>
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black">Archedin</h1>
         
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-black font-medium">
-          <li><a href="#">Home</a></li>
+          <li><Link href="/">Home</Link></li>
           <li><Link href="/how-it-works">How It Works</Link></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
@@ -66,7 +66,7 @@ const Page = () => {
           className="md:hidden fixed top-16 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl bg-white rounded-3xl shadow-lg z-50 border border-gray-200 animate-in slide-in-from-top-2 duration-200"
         >
           <ul className="flex flex-col gap-4 p-6 text-black font-medium">
-            <li><a href="#" onClick={() => setIsMenuOpen(false)} className="block py-2 hover:text-purple-600 transition">About</a></li>
+            <li><Link href="/" onClick={() => setIsMenuOpen(false)} className="block py-2 hover:text-purple-600 transition">Home</Link></li>
             <li><Link href="/how-it-works" onClick={() => setIsMenuOpen(false)} className="block py-2 hover:text-purple-600 transition">How It Works</Link></li>
             <li><a href="#" onClick={() => setIsMenuOpen(false)} className="block py-2 hover:text-purple-600 transition">Features</a></li>
             <li><a href="#" onClick={() => setIsMenuOpen(false)} className="block py-2 hover:text-purple-600 transition">Pricing</a></li>

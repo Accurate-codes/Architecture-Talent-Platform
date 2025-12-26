@@ -250,18 +250,17 @@ const page = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-purple-800 backdrop-blur-lg rounded-3xl p-10 md:p-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Start Building Your Career?
+              Start Building Real Architectural Experience
             </h2>
             <p className="text-lg md:text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-              Join thousands of architecture students who are building real portfolios 
-              and landing their dream jobs through Archedin.
+              Join architecture students using real projects to build verified portfolios and get discovered by firms on Archedin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-white text-purple-900 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all hover:scale-105">
-                Get Started Free →
+                Create Your Student Profile →
               </button>
               <button className="px-8 py-4 border-2 border-white text-white rounded-xl font-bold text-lg hover:bg-white hover:text-purple-900 transition-all">
-                Browse Projects
+                Hire Talent →
               </button>
             </div>
           </div>
